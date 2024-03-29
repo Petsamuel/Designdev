@@ -31,4 +31,4 @@ jobs:
         body: 'This PR updates the repository with the latest changes from the upstream main branch.'
         base: 'main'
         upstream-branch: 'main'
-        upstream: ${{ github.event.repository.html_url }}
+        upstream: 'https://github.com/davido2003/Designdev'
