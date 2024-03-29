@@ -2,7 +2,7 @@ name: Update from Main
 
 on:
   schedule:
-    - cron: '*/20 * * * *' # Run every 20 minutes
+    - cron: '*/35 * * * *' # Run every 35 minutes
 
 jobs:
   update:
