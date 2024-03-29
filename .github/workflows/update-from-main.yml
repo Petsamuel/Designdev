@@ -15,6 +15,9 @@ jobs:
         ref: 'main' # Checkout the main branch
         fetch-depth: 0 # Fetch all history for updating
 
+    - name: Print upstream URL
+      run: git remote get-url upstream
+
     - name: Update from main
       run: |
         git fetch upstream main
