@@ -1,0 +1,24 @@
+# .github/workflows/update-from-main.yml
+
+name: Update from Main
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Run every 30 minutes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        ref: 'main' # Checkout the main branch
+        fetch-depth: 0 # Fetch all history for updating
+
+    - name: Update from main
+      run: |
+        git fetch origin main
+        git checkout main
+        git pull
