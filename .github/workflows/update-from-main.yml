@@ -2,7 +2,7 @@ name: Update from Main
 
 on:
   schedule:
-    - cron: '*/60 * * * *' # Run every 60 minutes
+    - cron: '*/180 * * * *' # Run every 180 minutes
 
 jobs:
   update:
